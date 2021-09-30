@@ -14,7 +14,7 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
                 dangerouslySetInnerHTML={{
                     __html: `
                         !function(_window, _document) {
-                            var OB_ADV_ID = ${pluginOptions.outbrainId};
+                            var OB_ADV_ID = '${pluginOptions.outbrainId}';
                             if (_window.obApi) {
                                 var toArray = function(object) {
                                     return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
